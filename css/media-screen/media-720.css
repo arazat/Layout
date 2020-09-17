@@ -1,0 +1,301 @@
+@media(max-device-width: 770px){ 
+	
+	header{
+		height: 500px;
+
+	}
+	.ul{
+		display: none;
+	}
+	.column{
+		width: 530px;
+	}
+
+
+	.animation_box {
+		margin:70px 0 0 0;
+	
+	}
+
+	.logo{
+		margin: 60px 50px 0 0 ;
+		opacity: 0.8;
+
+	}
+	.ava{
+		height: 100px;
+		width: 100px;
+
+	}
+	.logo__text {
+
+		font-size: 45px;
+	}
+	/* ////////////////////////////burger menu */
+	
+	.burger-menu {
+
+	}
+	.burger-menu__button {
+		position: fixed;
+		top:30px ;
+		right: 100px;
+
+		width: 110px;
+		height: 110px;
+
+		z-index: 50;
+		border-radius: 50%;
+		background-color: #1B1A31;
+		box-shadow: 0 0 10px black; 
+
+		opacity: 0.6;
+	}
+
+	
+
+	.burger-menu__lines,
+	.burger-menu__lines::after,
+	.burger-menu__lines::before{
+		position: absolute;
+		height: 6px;
+		width: 50px;
+		background-color: #FEFE9B;
+		transition-duration: 0.6s; 
+	}
+	.burger-menu__lines{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		animation-name:links1 ;
+		animation-duration: 1s; 
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+
+
+
+		
+
+	}
+	.burger-menu__lines::before{
+		content: '';
+		top: -15px;
+
+		animation-name:links1 ;
+		animation-duration: 1s; 
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+	}
+	.burger-menu__lines::after{
+		content: '';
+		top: 15px;
+
+		animation-name:links1 ;
+		animation-duration: 1s; 
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+	}
+	@keyframes links1 {
+	0% {background-color: #D56E6E;}
+
+	100% {background-color: #FEFE9B;}
+}
+
+	.burger-menu_active .burger-menu__lines{
+		background-color: transparent;
+
+		animation: none;
+
+	}
+	.burger-menu_active .burger-menu__lines::before{
+		top: 0;
+		transform: rotate(45deg);
+
+
+		transition-duration: 0.6s; 
+	}
+	.burger-menu_active .burger-menu__lines::after{
+		top: 0;
+
+		transform: rotate(-45deg);
+		transition-duration: 0.6s; 
+
+	}
+
+	.burger-menu__nav {
+		padding-top: 80px;
+		position: fixed;
+		top: 0;
+		z-index: 20;
+		display: flex;
+		flex-flow: column;
+		text-align: center;
+		height: 100%;
+		width: 50%;
+		background-color: #1B1A31;
+		overflow-y: auto;
+		right: -100%;
+
+		transition-duration: 0.6s; 
+
+		opacity: 0.8;
+
+
+
+
+	}
+	.burger-menu_active .burger-menu__nav {
+		right: 0;
+
+
+	}
+
+	.burger-menu__link {
+		padding: 70px 30px;
+		font-family: sans-serif;
+		font-size: 32px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-weight: bold;
+		color: #FEFE9B;
+
+
+		animation-name:links ;
+		animation-duration: 1s; 
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+	}
+	.burger-menu__link:first-child{
+		margin: 40px 0 0 0 ; 
+	}	
+	.burger-menu__overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left:   0;
+		width: 100vh;
+		height: 100vh;
+		z-index: 10;
+
+	}
+	.burger-menu_active .burger-menu__overlay{
+		display: block;
+		
+	}
+
+	.overlay h1{
+		font-size:50px;
+		 margin-top:18%;
+	}
+
+
+
+
+
+	.description__box {
+		display: flex;
+		flex-direction: column;
+	}
+	.description__img {
+		height: 900px;
+		width: 900px;
+
+		margin: 0;
+	}
+
+	.text-discription__box{
+		flex-direction: column; 
+		align-items: center;
+		justify-content: center;
+
+		margin: 10px 0;
+		
+	}
+	
+	.description__text{
+		margin: 0;
+
+	}
+	.description__text p{
+		font-size: 40px;
+		text-align: left;
+	}
+
+	.price__box{
+		
+		display: flex;
+		
+		align-items: center;
+		justify-content: center;
+
+		margin: 50px 0 50px 0;
+
+
+		
+
+
+
+	}
+	.price{
+		color: #FEFE9B;
+		font-size: 30px;
+		width: 400px;
+
+	}
+	.bttn{
+		margin: 0 0 0  0;
+	}
+	.bttn span{
+		background-color: #F33B3B;
+		box-shadow: 0 0 10px #545151;
+
+
+		font-size: 30px;
+		padding: 25px 32px;
+
+	}
+	.bttn a{
+
+		color: #fff;
+	}
+
+
+	.row__1 .character__text{
+		font-size: 20px;
+
+	}
+	.row__2 .character__text{
+		font-size: 20px;
+
+	}
+	.row__3 .character__text{
+		font-size: 20px;
+
+	}
+
+
+
+	.row__1 img{
+		width: 80px;
+	
+	}
+	.row__2 img{
+		width: 80px;
+	
+	}
+	.row__3 img{
+		width: 80px;
+	
+	}
+
+
+	table tr td{
+		font-size: 28px;
+	}
+	.table__bttn button{
+		padding: 25px 410px;
+		font-size: 28px;
+	}
+}
