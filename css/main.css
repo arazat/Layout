@@ -264,6 +264,7 @@ header {
 .table__header {
 	font-size: 22px;
 	color: rgb(255,255,255, .6);
+	-webkit-color: rgb(255,255,255, .6);
 	text-align: center;
 
 }
@@ -272,6 +273,7 @@ header {
 	width: 100%;
 	font-size: 20px;
 	color: rgb(255,255,255, .5);
+	-webkit-color: rgb(255,255,255, .5);
 	background-color:#222134;
 	display: flex;
 	justify-content: center;
@@ -281,10 +283,12 @@ header {
 .table td {
 	padding: 10px 10px;
 	border: 1px dashed ;
+	-webkit-border: 1px dashed ;
 	width: 1270-312px;
 }
 .table td:first-child{
 	color: rgb(255,255,255, .6);
+	-webkit-color: rgb(255,255,255, .6);
 	padding: 15px 50px 15px 50px;
 }
 .table td:last-child{padding: 15px 50px 15px 50px;}
@@ -293,5 +297,6 @@ header {
 	box-shadow: 0 0 10px #545151;
 	font-size: 22px;
 	color: rgb(255,255,255);
+	-webkit-color: rgb(255,255,255);
 	padding: 10px 408px;
 }
